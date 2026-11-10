@@ -1,0 +1,13 @@
+{
+  "name": "auditro",
+  "owner": { "name": "Auditro", "url": "https://auditro.co" },
+  "metadata": { "description": "Auditro for AI clients: governed UAE ICV scores, evidence and actions." },
+  "plugins": [
+    {
+      "name": "auditro",
+      "source": "./plugins/auditro",
+      "description": "Connect Claude to your Auditro workspace: ICV position, evidence gaps, certificates, suppliers, tenders, capex and Emiratisation, with deterministic numbers.",
+      "category": "productivity"
+    }
+  ]
+}

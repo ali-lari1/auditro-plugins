@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "auditro": {
+      "type": "http",
+      "url": "https://app.auditro.co/mcp"
+    }
+  }
+}

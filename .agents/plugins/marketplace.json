@@ -1,0 +1,12 @@
+{
+  "name": "auditro",
+  "interface": { "displayName": "Auditro" },
+  "plugins": [
+    {
+      "name": "auditro",
+      "source": { "source": "local", "path": "./plugins/auditro" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}
