@@ -1,6 +1,6 @@
 # Auditro plugins
 
-Install Auditro into Claude Code or Codex in two commands. The plugin connects your AI client to the Auditro MCP server (`https://app.auditro.co/mcp`) and adds the `auditro-icv` skill, which teaches the agent how to use Auditro's tools safely.
+Install [Auditro](https://auditro.co/), the UAE ICV and Emiratisation planning workspace, into Claude Code or Codex in two commands. The plugin connects your AI client to the Auditro MCP server (`https://app.auditro.co/mcp`) and adds the `auditro-icv` skill, which teaches the agent how to use Auditro's tools safely.
 
 Auditro computes every score, figure and estimate. The AI client selects governed records and asks for approval, and Auditro keeps tenant isolation, permissions, evidence and audit history.
 
@@ -28,6 +28,13 @@ Sign-in uses OAuth. You authorize one Auditro organization and choose read-only 
 
 ## Other clients
 
-ChatGPT, Cursor and any MCP client that supports remote Streamable HTTP with OAuth can connect directly to `https://app.auditro.co/mcp`. Setup guides: https://app.auditro.co/docs/mcp
+ChatGPT, Cursor and any MCP client that supports remote Streamable HTTP with OAuth can connect directly to `https://app.auditro.co/mcp`.
 
-Support: https://auditro.co/support · Privacy: https://auditro.co/privacy · Terms: https://auditro.co/terms
+## Documentation
+
+- [Install the Auditro plugin](https://auditro.co/docs/install-ai-plugin/)
+- [Connect AI tools to Auditro](https://auditro.co/docs/connect-ai-tools/): Claude, ChatGPT, Cursor, Codex and other MCP clients
+- [MCP tool and permission reference](https://auditro.co/docs/mcp-tools/): every tool, whether it changes data, and the resources it exposes
+- [All Auditro guides](https://auditro.co/docs/)
+
+Support: https://auditro.co/support/ · Privacy: https://auditro.co/privacy/ · Terms: https://auditro.co/terms/
