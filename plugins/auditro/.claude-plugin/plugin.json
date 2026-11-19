@@ -1,12 +1,22 @@
 {
   "name": "auditro",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Auditro MCP server and ICV skill: governed UAE ICV scores, evidence gaps, certificates, suppliers, tenders, capex and Emiratisation. Auditro computes every number.",
-  "author": { "name": "Auditro", "url": "https://auditro.co" },
+  "author": {
+    "name": "Auditro",
+    "url": "https://auditro.co"
+  },
   "homepage": "https://app.auditro.co/docs/mcp",
   "repository": "https://github.com/ali-lari1/auditro-plugins",
   "license": "MIT",
-  "keywords": ["auditro", "icv", "uae", "compliance", "emiratisation", "mcp"],
+  "keywords": [
+    "auditro",
+    "icv",
+    "uae",
+    "compliance",
+    "emiratisation",
+    "mcp"
+  ],
   "skills": "./skills/",
   "mcpServers": "./mcp.json"
 }

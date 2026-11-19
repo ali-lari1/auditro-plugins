@@ -1,6 +1,6 @@
 {
   "name": "auditro",
-  "interface": { "displayName": "Auditro" },
+  "interface": { "displayName": "Auditro MCP" },
   "plugins": [
     {
       "name": "auditro",

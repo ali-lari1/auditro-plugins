@@ -10,14 +10,21 @@ Auditro is a remote MCP server for UAE ICV compliance. This skill covers how to 
 ## Connect
 
 - Endpoint: `https://app.auditro.co/mcp` (streamable HTTP, OAuth 2.1 with PKCE). Never paste a permanent token.
-- Claude Code: `claude mcp add --transport http --scope user auditro https://app.auditro.co/mcp`, then `claude mcp login auditro`
-- Codex: `codex mcp add auditro --url https://app.auditro.co/mcp`, then `codex mcp login auditro`
-- Cursor: add `{"mcpServers": {"auditro": {"url": "https://app.auditro.co/mcp"}}}` to `.cursor/mcp.json`, then `cursor-agent mcp enable auditro` and `cursor-agent mcp login auditro`
-- ChatGPT: enable developer mode, then Apps & Connectors, Create, MCP server URL `https://app.auditro.co/mcp`, Authentication OAuth
+- Claude Code: `claude mcp add --transport http --scope user auditro-mcp https://app.auditro.co/mcp`, then `claude mcp login auditro-mcp`
+- Codex: `codex mcp add auditro-mcp --url https://app.auditro.co/mcp`, then `codex mcp login auditro-mcp`
+- Cursor: add `{"mcpServers": {"auditro-mcp": {"url": "https://app.auditro.co/mcp"}}}` to `.cursor/mcp.json`, then `cursor-agent mcp enable auditro-mcp` and `cursor-agent mcp login auditro-mcp`
+- ChatGPT: open chatgpt.com/plugins, select +, then Add custom MCP server; URL `https://app.auditro.co/mcp`, authentication OAuth, then Create as a plugin
+- Claude (web and desktop): Customize, Connectors, +, Add custom connector, URL `https://app.auditro.co/mcp`, then Connect
 
 ## The invariant
 
 Auditro computes every number. The agent only selects governed candidate IDs. Never restate, round, estimate or recompute a score, point impact or cost: quote the figure the tool returned, with its ruleset and source cutoff. Auditro does not certify scores and does not guarantee tender outcomes.
+
+## Tender readiness agent
+
+When a finance lead asks whether a tender is achievable at a stated AED budget, read the workspace and tender tracker. Resolve the exact tender and ask for any missing budget or ambiguous tender. Read its evidence gaps and certificate cover. Call `assess_tender_readiness` separately for each user-stated budget. Use the tender ID from the tracker. Report the returned status, baseline, target, projected cost and score, evidence and funding gap where available. Distinguish an open evidence or certificate requirement from the projected score. A blocked result needs its specific next action. Leave approvals and submission with finance.
+
+For the explicitly illustrative championship case use tender ID `judge-pump-tender`. Compare AED 30,000 and AED 18,000 on that same case. The isolated judge server supplies `get_judge_tender` in place of workspace discovery. Its only data is synthetic. Cite the source cutoff and rules version and request finance sign-off.
 
 ## Discovery loop
 
