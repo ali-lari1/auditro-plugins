@@ -24,6 +24,7 @@ Read tools need read scope; writes need full access.
 | Which rulesets exist and what is their status? | `list_rulesets` |
 | How do two rulesets differ? | `compare_rulesets` |
 | How do the programmes fit together? | `get_programme_architecture` |
+| Does this tender reach its target within budget? | `assess_tender_readiness` |
 | What evidence is missing? | `get_evidence_gaps` |
 | What is the current action plan? | `get_action_plan` |
 | Which suppliers are in the network? | `get_supplier_network` |
